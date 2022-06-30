@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Register.css";
+import "./Register.scss";
 function Register() {
   return (
     <div className='Register'>Register</div>

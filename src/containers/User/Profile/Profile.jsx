@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Profile.css";
+import "./Profile.scss";
 function Profile() {
   return (
     <div className='Profile'>Profile</div>

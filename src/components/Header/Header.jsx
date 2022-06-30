@@ -10,8 +10,6 @@ import { NavLink } from "react-router-dom"
 function Header() {
     return (
         <div className='Nav'>
-
-            <Nav activeKey="/home" onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}>
                 <Nav.Item>
                     <NavLink className="navLink" to="/">Home</NavLink>
                 </Nav.Item>
@@ -29,7 +27,6 @@ function Header() {
                         Disabled
                     </Nav.Link>
                 </Nav.Item>
-            </Nav>
 
         </div>
     )

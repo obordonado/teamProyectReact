@@ -1,0 +1,37 @@
+
+.Nav {
+  height: 8em;
+  width: 100%;
+  background-color: violet;
+
+  color: white;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navLink {
+  font-weight: bold;
+  margin-right: 2em;
+  margin-bottom: 1em;
+
+  color: white;   
+  transition: 0.5s;
+  text-decoration: none;
+  border: 0.5em;
+  border-radius: 0.4em;
+  background-color: rgb(162, 58, 140);
+  padding: 0.3em;
+  box-shadow: 0px 0.1px 0.4px 2px grey;
+  
+}
+
+.navLink:hover {
+
+  color: grey;
+  transition: 0.5s;
+}
+

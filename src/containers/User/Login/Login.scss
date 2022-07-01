@@ -1,5 +1,5 @@
 .loginDesign{
-    height: 92vh;
+    height: 90vh;
     width: 100vw;
     background: radial-gradient(rgb(0, 225, 255), rgb(0, 221, 255));
     display: flex;
@@ -7,6 +7,9 @@
     align-items: center;
     flex-direction: column;
     gap: 1em;
+    background-image: url(/public/sala.jpg);
+    background-size: cover;
+
 
     input {
         height: 2.5em;

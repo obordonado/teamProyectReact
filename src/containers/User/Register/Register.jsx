@@ -71,38 +71,42 @@ const Register = props => {
       errorMsg: ''
     });
 
-    dispatch(registerUser(register.email, register.password, register.name, register.client_number, register.role, register.gender))
+    dispatch(registerUser(register.name, register.client_number, register.age, register.gender, register.password, register.role))
 
   }
 
   return (
     <Row className="Register justify-content-md-center">
       <Col md={6}>
-        <h1>Registro</h1>
+        
         <br></br>
         <Form onSubmit={userRegister}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email</Form.Label>
-            <Form.Control type="email" name="email" onChange={handleInput} />
+            <Form.Label></Form.Label>
+            <Form.Control type="text" name="name" placeholder="Name" onChange={handleInput} />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Contraseña</Form.Label>
-            <Form.Control type="password" name="password" onChange={handleInput} />
+            <Form.Label></Form.Label>
+            <Form.Control type="text" name="client_number" placeholder="Client number" onChange={handleInput} />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Nombre</Form.Label>
-            <Form.Control type="text" name="name" onChange={handleInput} />
+            <Form.Label></Form.Label>
+            <Form.Control type="text" name="age" placeholder="Age" onChange={handleInput} />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Teléfono</Form.Label>
-            <Form.Control type="text" name="phone" onChange={handleInput} />
+            <Form.Label></Form.Label>
+            <Form.Control type="text" name="gender" placeholder="Gender" onChange={handleInput} />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Dirección</Form.Label>
-            <Form.Control type="text" name="address" onChange={handleInput} />
+            <Form.Label></Form.Label>
+            <Form.Control type="password" name="password" placeholder="Password" onChange={handleInput} />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Label></Form.Label>
+            <Form.Control type="text" name="role" placeholder="Role" onChange={handleInput} />
           </Form.Group>
           <Button variant="primary" type="submit">
-            Registrarse
+            Register
           </Button>
         </Form>
         <p>{register.isError ? register.message : ''}</p>

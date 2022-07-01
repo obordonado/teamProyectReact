@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import './Login.scss';
 
@@ -9,21 +8,22 @@ import { loginUser, userData } from "../userSlice";
 const Login = () => {
 
 
-  const [credentials, setCredentials] = useState({ email: '', password: '' });
+  const [credentials, setCredentials] = useState({ client_number: '', password: '' });
   const [msgError, setMsgError] = useState("");
 
   const dispatch = useDispatch();
 
-  const credenciales = useSelector(userData);
+  const identification = useSelector(userData);
 
   const updateCredentials = (event) => {
-    setCredentials({ ...credentials, [event.target.name]: event.target.value })
+    setCredentials({ ...credentials, 
+                    [event.target.name]: event.target.value })
   }
 
 
   useEffect(() => {
 
-    if (credenciales?.token !== '') {
+    if (identification?.token !== '') {
       <NavLink className="navLink" to="/">Home</NavLink>;
     };
   }, []);
@@ -34,23 +34,23 @@ const Login = () => {
 
 
 
-    if (! /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(credentials.email)) {
+    /* if (! /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(credentials.email)) {
       setMsgError('Introduce un e-mail válido');
       return;
-    }
+    } */
 
 
 
-    if (credentials.password.length > 4) {
+    if (credentials.password.length > 5) {
 
       if (! /[\d()+-]/g.test(credentials.password)) {
 
-        setMsgError('Introduce un password válido');
+        setMsgError('Wrong password');
         return;
       };
 
     } else {
-      setMsgError('El password debe de tener como mínimo 4 caracteres');
+      setMsgError('Password must be at least 5 characters long');
       return;
     }
 
@@ -59,7 +59,7 @@ const Login = () => {
 
 
     dispatch(loginUser({
-      email: credentials.email,
+      client_number: credentials.client_number,
       password: credentials.password
     }
     ));
@@ -73,8 +73,8 @@ const Login = () => {
   return (
     <div className='loginDesign'>
       <pre>{JSON.stringify(credentials, null, 2)}</pre>
-      <input type='email' name='email' title='email' onChange={updateCredentials} lenght='30' />
-      <input type='password' name='password' title='password' onChange={updateCredentials} lenght='30' />
+      <input type='text' name='client_number' title='client_number' placeholder='Client number' onChange={updateCredentials} lenght='30' />
+      <input type='password' name='password' title='password' placeholder='Password' onChange={updateCredentials} lenght='30' />
       <div className="sendButton" onClick={() => log()}>Login</div>
       <div>{msgError}</div>
     </div>

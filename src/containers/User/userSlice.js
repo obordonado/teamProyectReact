@@ -68,12 +68,12 @@ export const registerUser = (name, client_number, age, gender, password, role) =
   try {
     const user = await axios.post('https://endpoints-sql.herokuapp.com/users/adduser',
       {
-        name: "",
-        client_number: "",
-        age: "",
-        gender: "",
-        password: "",
-        role: ""
+        name: name,
+        client_number: client_number,
+        age: age,
+        gender: gender,
+        password: password,
+        role: role
       })
 
     let response = user

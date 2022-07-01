@@ -6,7 +6,6 @@ import Home from "./containers/Home/Home";
 import Login from "./containers/User/Login/Login";
 import Register from "./containers/User/Register/Register";
 import Film from "./containers/Film/Film";
-import cors from "cors"
 
 function App() {
 

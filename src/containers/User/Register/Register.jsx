@@ -37,14 +37,14 @@ const Register = props => {
   const userRegister = (event) => {
     event.preventDefault()
 
-    if (! /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(register.email)) {
+ /*    if (! /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(register.email)) {
       setRegister({
         ...register,
         isError: true,
         message: 'Wrong e-mail'
       });
       return;
-    }
+    } */
 
     if (register.password.length > 5) {
       if (! /[\d()+-]/g.test(register.password)) {

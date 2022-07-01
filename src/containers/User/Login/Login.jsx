@@ -72,8 +72,8 @@ const Login = () => {
 
   return (
     <div className='loginDesign'>
-      <pre>{JSON.stringify(credentials, null, 2)}</pre>
-      <input type='text' name='client_number' title='client_number' placeholder='Client number' onChange={updateCredentials} lenght='30' />
+{/*       <pre>{JSON.stringify(credentials, null, 2)}</pre>
+ */}      <input type='text' name='client_number' title='client_number' placeholder='Client number' onChange={updateCredentials} lenght='30' />
       <input type='password' name='password' title='password' placeholder='Password' onChange={updateCredentials} lenght='30' />
       <div className="sendButton" onClick={() => log()}>Login</div>
       <div>{msgError}</div>

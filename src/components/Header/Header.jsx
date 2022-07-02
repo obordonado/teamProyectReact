@@ -4,9 +4,6 @@ import { Nav } from 'react-bootstrap';
 import { NavLink } from "react-router-dom"
 
 
-
-
-
 function Header() {
     return (
         <div className='Nav'>
@@ -22,11 +19,11 @@ function Header() {
                 <Nav.Item>
                     <NavLink className="navLink" to="/films">Films</NavLink>
                 </Nav.Item>
-                <Nav.Item>
+                {/* <Nav.Item>
                     <Nav.Link eventKey="disabled" disabled>
                         Disabled
                     </Nav.Link>
-                </Nav.Item>
+                </Nav.Item> */}
 
         </div>
     )

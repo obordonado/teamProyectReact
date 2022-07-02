@@ -15,7 +15,7 @@ const Film = props => {
     //let [weather, setWeather] = useState([])
 
     useEffect(()=> {
-        axios.get('https://cch-mysql-videoclub-06-2022.herokuapp.com/films/')
+        axios.get('https://endpoints-sql.herokuapp.com/films')
         .then(resp => {
             console.log(resp.data)
             dispatch(addFilmData(resp.data))
@@ -31,23 +31,23 @@ const Film = props => {
     */
 
     return (
-        <Container className="Tiempo">
+        <Container className="Film">
             <Row>
                 {
                     films.map((film, index)=> (
                         <Col key={index} xs={12} md={6} xl={3}>
                             <Card>
-                                <Card.Img variant="top" src="https://saposyprincesas.elmundo.es/wp-content/uploads/2016/07/jumanji2.jpg" />
+                                <Card.Img variant="top" src={film.image || "https://static.vecteezy.com/system/resources/previews/000/665/794/large_2x/vector-cinema-elements.jpg"} />
                                 <Card.Body>
-                                    <Card.Title>{film.name}</Card.Title>
+                                    <Card.Title>{film.title}</Card.Title>
                                     <Card.Text>
-                                        {film.description}
                                         <h4>Información</h4>
                                          <ul>
-                                            <li>Fecha de estreno: {film.release_date}</li>
+                                            <li>Director: {film.director}</li>
+                                            <li>Año de estreno: {film.year}</li>
                                             <li>Genero: {film.genre}</li>
-                                            <li>Edad recomendada: {film.age}</li>
-                                            <li>Duración: {film.lenght} minutos</li>
+                                            <li>Edad recomendada: {film.recomended_age}</li>
+                                            <li>Duración: {film.duration} minutos</li>
                                             <li>Precio: {film.price} EUR </li>
                                          </ul>
                                     </Card.Text>

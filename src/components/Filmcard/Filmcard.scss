@@ -1,6 +1,6 @@
 
 
-.WeatherCard {
+.Filmcard {
     padding: 1em;
     margin: 1em;
     background-color:cadetblue;
@@ -12,5 +12,10 @@
         background-color: red;
         border: 0;
         color: white;
+    }
+    ul{
+        list-style: none;
+        text-align: left;
+        padding: 20px 0 0 0;
     }
 }

@@ -1,10 +1,11 @@
 .Film{
-    height: 90vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-color: rgb(94, 218, 232);
     background-image: url(/public/sala.jpg);
-    background-size: cover;
     background-repeat: repeat;
     display:block;
     justify-content: center;
+    max-width: 100% !important;
+    margin: 0;
 }

@@ -46,25 +46,23 @@ This is the fifth Geekshubs project and it consists in create a frontend for the
 ##Tecnologias:
 
 
-● React
+● [React](https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg)
 
-● Redux
+● https://seeklogo.com/images/R/redux-logo-9CA6836C12-seeklogo.com.png
 
-● Bootstrap
+● [Bootstrap](https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg)
 
-● Sass
+● [Sass](https://www.vectorlogo.zone/logos/sass-lang/sass-lang-ar21.svg)
 
-● Cors
+● [Cors](https://addons.mozilla.org/user-media/previews/full/227/227652.png?modified=1622133270)
 
-● Axios
+● [Axios](https://www.vectorlogo.zone/logos/axios/axios-ar21.svg)
 
 ● JWT
 
-● Axios
+● [MySqlWorkbench](https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg)
 
-● MySqlWorkbench
-
-● Heroku
+● [Heroku](https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg)
 
 </br>
 

@@ -19,10 +19,10 @@
         width: 30em;
         background-color: rgb(170, 220, 221);
         border: 0.1em solid white;
-        box-shadow: 0em 0em 0.4em 0.1em rgb(154, 152, 152);
+        box-shadow: 0em 0em 0.4em 0.05em rgb(154, 152, 152);
     }
     Button{
-        background-color: rgb(219, 207, 42);
+        background: radial-gradient(rgb(105, 192, 190), rgb(48, 158, 255));
         color: black;
         border: 0.1em solid white;
         box-shadow: 0em 0em 0.4em 0.1em rgb(154, 152, 152);

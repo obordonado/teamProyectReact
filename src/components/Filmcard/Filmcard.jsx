@@ -20,7 +20,7 @@ const Filmcard = props => {
                     <li><strong>Duración:</strong> {duration} minutos</li>
                     <li><strong>Precio:</strong> {price} EUR </li>
                 </ul>
-                <Button variant="primary" className ="cardBtn">Ver Pelicula</Button>
+                <Button variant="primary" className ="cardBtn" size="lg" href="https://youtu.be/YDGw1MTEe9k">Ver Trailer</Button>
             </Card.Body>
         </Card>
     )

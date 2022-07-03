@@ -16,7 +16,7 @@ const Film = props => {
     //let [weather, setWeather] = useState([])
 
     useEffect(()=> {
-        axios.get('https://endpoints-sql.herokuapp.com/films')
+        axios.get('https://heroku-sqlurl.herokuapp.com/films')
         .then(resp => {
             console.log(resp.data)
             dispatch(addFilmData(resp.data))
@@ -30,13 +30,14 @@ const Film = props => {
     }
     <button className="cardBtn" onClick={remCard(film.id)}>X</button>
     */
+  
 
     return (
         <Container className="Film">
             <Row>
                 {
                     films.map((data, index)=> (
-                        <Col key={index} xs={12} md={4}>
+                        <Col key={index} xs={12} md={4} xl={3}>
                             <Filmcard {...data} />
                         </Col>
                     ))

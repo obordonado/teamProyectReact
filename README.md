@@ -47,7 +47,7 @@ This is the fifth Geekshubs project and it consists in create a frontend for the
 
 </br>
 
-<img src="https://github.com/Alexdck/teamProyectReact/blob/devCl/public/img/screenshot2.png">
+<img src="https://github.com/Alexdck/teamProyectReact/blob/devCl/public/img/screenshot2.png](https://github.com/Alexdck/teamProyectReact/blob/d4ccfb26720d92d44d5cfd07e2496a9c7957407b/public/img/screenshot2.png">
 
 </br>
 

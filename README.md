@@ -35,7 +35,7 @@ This is the fifth Geekshubs project and it consists in create a frontend for the
 
 </br>
 
-#Home page:
+● Home page:
 
 </br>
 
@@ -43,7 +43,7 @@ This is the fifth Geekshubs project and it consists in create a frontend for the
 
 </br>
 
-#Login page:
+● Login page:
 
 </br>
 
@@ -51,7 +51,7 @@ This is the fifth Geekshubs project and it consists in create a frontend for the
 
 </br>
 
-#Register page:
+● Register page:
 
 </br>
 
@@ -59,7 +59,7 @@ This is the fifth Geekshubs project and it consists in create a frontend for the
 
 </br>
 
-#Films page:
+● Films page:
 
 </br>
 
@@ -72,7 +72,7 @@ This is the fifth Geekshubs project and it consists in create a frontend for the
 </br>
 
 <code><img width="10%" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg"></code>
-<code><img width="10%" src="https://seeklogo.com/images/R/redux-logo-9CA6836C12-seeklogo.com.png"></code> <code><img width="10%" src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg"></code> <code><img width="10%" src="https://www.vectorlogo.zone/logos/sass-lang/sass-lang-ar21.svg"></code> <code><img width="10%" src="https://addons.mozilla.org/user-media/previews/full/227/227652.png?modified=1622133270"></code> <code><img width="10%" src="https://github.com/Alexdck/teamProyectReact/blob/devCl/public/img/jwt.png"></code> <code><img width="10%" src="https://www.vectorlogo.zone/logos/axios/axios-ar21.svg"></code> <code><img width="10%" src="https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg"></code>
+<code><img width="10%" src="https://seeklogo.com/images/R/redux-logo-9CA6836C12-seeklogo.com.png"></code> <code><img width="10%" src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg"></code> <code><img width="10%" src="https://www.vectorlogo.zone/logos/sass-lang/sass-lang-ar21.svg"></code> <code><img width="10%" src="https://addons.mozilla.org/user-media/previews/full/227/227652.png?modified=1622133270"></code> <code><img width="10%" src="https://images.ctfassets.net/23aumh6u8s0i/6sw33rq7EM8nCi5Gov3RCD/6b1d1cf37d688b3e81d2445da694e938/jwt_01"></code> <code><img width="10%" src="https://www.vectorlogo.zone/logos/axios/axios-ar21.svg"></code> <code><img width="10%" src="https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg"></code>
 
 </br>
 

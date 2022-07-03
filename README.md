@@ -45,24 +45,8 @@ This is the fifth Geekshubs project and it consists in create a frontend for the
 
 ##Tecnologias:
 
-
-● [React](https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg)
-
-● https://seeklogo.com/images/R/redux-logo-9CA6836C12-seeklogo.com.png
-
-● [Bootstrap](https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg)
-
-● [Sass](https://www.vectorlogo.zone/logos/sass-lang/sass-lang-ar21.svg)
-
-● [Cors](https://addons.mozilla.org/user-media/previews/full/227/227652.png?modified=1622133270)
-
-● [Axios](https://www.vectorlogo.zone/logos/axios/axios-ar21.svg)
-
-● JWT
-
-● [MySqlWorkbench](https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg)
-
-● [Heroku](https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg)
+<code><img width="10%" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg"></code>
+<code><img width="10%" src="https://seeklogo.com/images/R/redux-logo-9CA6836C12-seeklogo.com.png"></code> <code><img width="10%" src="https://seeklogo.com/images/R/redux-logo-9CA6836C12-seeklogo.com.png"></code> <code><img width="10%" src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg"></code> <code><img width="10%" src="https://www.vectorlogo.zone/logos/sass-lang/sass-lang-ar21.svg"></code> <code><img width="10%" src="https://addons.mozilla.org/user-media/previews/full/227/227652.png?modified=1622133270"></code> <code><img width="10%" src="https://github.com/Alexdck/teamProyectReact/blob/devCl/public/img/jwt.png"></code> <code><img width="10%" src="https://www.vectorlogo.zone/logos/axios/axios-ar21.svg"></code> <code><img width="10%" src="https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg"></code>
 
 </br>
 

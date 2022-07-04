@@ -7,13 +7,9 @@ export const userSlice = createSlice({
   name: 'user',
   initialState: {
     token: "",
-    name: "",
-    client_number: "",
-    age: "",
-    gender: "",
-    password: "",
-    role: "",
+    isRegister: false,
     successMessage: ""
+
 
   },
   reducers: {
@@ -43,15 +39,13 @@ export const userSlice = createSlice({
 export const loginUser = (body) => async (dispatch) => {
   try {
 
-    const user = await axios.post("https://endpoints-sql.herokuapp.com/users/login", body);
+    const user = await axios.post("https://heroku-sqlurl.herokuapp.com/users/login", body);
 
-    let decodificada = jwt(user.data.token);
+    let decodeToken = jwt(user.data.token);
 
-    //En caso de que todo haya ido bien, es decir, el backend y la red nos responden con un código 200 que significa que todo está ok
     if (user.status === 200) {
-      //Procedo por fin al guardado en redux, aqui estoy guardando en el estado, aquello que se decodifica del token
-      //y también el token por otro lado.
-      dispatch(login({ ...decodificada, token: user.data.token }))
+
+      dispatch(login({ ...decodeToken, token: user.data.token }))
     }
 
   } catch (error) {

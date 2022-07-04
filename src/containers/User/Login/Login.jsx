@@ -15,9 +15,8 @@ const Login = () => {
 
   const identification = useSelector(userData);
 
-  const updateCredentials = (event) => {
-    setCredentials({ ...credentials, 
-                    [event.target.name]: event.target.value })
+  const updateCredentials = (e) => {
+    setCredentials({ ...credentials, [e.target.name]: e.target.value })
   }
 
 

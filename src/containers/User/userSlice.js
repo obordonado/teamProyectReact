@@ -60,7 +60,7 @@ export const logOut = () => (dispatch) => {
 
 export const registerUser = (name, client_number, age, gender, password, role) => async (dispatch) => {
   try {
-    const user = await axios.post('https://endpoints-sql.herokuapp.com/users/adduser',
+    const user = await axios.post('https://heroku-sqlurl.herokuapp.com/users/adduser',
       {
         name: name,
         client_number: client_number,
@@ -82,7 +82,5 @@ export const registerUser = (name, client_number, age, gender, password, role) =
 export const { login, logout, register } = userSlice.actions;
 
 export const userData = (state) => state.user;
-
-export const userSelector = (state) =>state.user
-
+ 
 export default userSlice.reducer;

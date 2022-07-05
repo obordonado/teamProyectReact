@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from "react-redux";
 import { loginUser, userData } from "../userSlice";
 import { Button } from 'react-bootstrap';
@@ -13,6 +13,7 @@ const Login = () => {
 
   const dispatch = useDispatch();
 
+  let navigate = useNavigate()
   const identification = useSelector(userData);
 
   const updateCredentials = (e) => {
@@ -23,22 +24,15 @@ const Login = () => {
   useEffect(() => {
 
     if (identification?.token !== '') {
-      <NavLink className="navLink" to="/">Home</NavLink>;
+      setTimeout(() => {
+        navigate("/");
+  
+      }, 500)
     };
   }, []);
 
 
   const log = () => {
-
-
-
-
-    /* if (! /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(credentials.email)) {
-      setMsgError('Introduce un e-mail válido');
-      return;
-    } */
-
-
 
     if (credentials.password.length > 5) {
 
@@ -53,19 +47,13 @@ const Login = () => {
       return;
     }
 
-
     setMsgError("");
-
 
     dispatch(loginUser({
       client_number: credentials.client_number,
       password: credentials.password
     }
     ));
-
-    setTimeout(() => {
-      <NavLink className="navLink" to="/">Home</NavLink>;
-    }, 1000)
 
   };
 

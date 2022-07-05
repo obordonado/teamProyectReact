@@ -10,7 +10,6 @@ export const userSlice = createSlice({
     isRegister: false,
     successMessage: ""
 
-
   },
   reducers: {
     login: (state, action) => {
@@ -82,5 +81,5 @@ export const registerUser = (name, client_number, age, gender, password, role) =
 export const { login, logout, register } = userSlice.actions;
 
 export const userData = (state) => state.user;
- 
+
 export default userSlice.reducer;

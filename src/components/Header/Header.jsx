@@ -38,7 +38,7 @@ const Header = () => {
 
                 <div className="nav" onClick={() => travel("/films")}>Films</div>
 
-                <div className="nav" to="/">{identification?.name}</div>
+                <div className="nav" to="/">{identification?.user.name}</div>
 
                 <div className="nav" onClick={() => dispatch(logOut())} >Logout</div>
 

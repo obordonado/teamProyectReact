@@ -24,6 +24,9 @@ const Header = () => {
                     <div className="nav" onClick={() => travel("/")}>Home</div>
                     <div className="nav" onClick={() => travel("/films")}>Films</div>
                 </div>
+                <div lassName='netflixContainer'>
+                    <img className='netflix' src="../../../public/img/netflixpobre.jpeg" alt="" />
+                </div>
                 <div className="nav1Second">
                     <div className="nav" onClick={() => travel("/users/login")}>Login</div>
                     <div className="nav" onClick={() => travel("/users/adduser")}>Register</div>
@@ -36,6 +39,9 @@ const Header = () => {
                 <div className='nav2First'>
                     <div className="nav" onClick={() => travel("/")}>Home</div>
                     <div className="nav" onClick={() => travel("/films")}>Films</div>
+                </div>
+                <div className='netflixContainer'>
+                    <img className='netflix' src="../../../public/img/netflixpobre.jpeg" alt="" />
                 </div>
                 <div className="nav2Second">
                     <div className="nav" to="/">{identification?.user.name}</div>

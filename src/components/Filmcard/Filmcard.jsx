@@ -6,7 +6,7 @@ const Filmcard = props => {
     const { director, title, year, url, genre, recomended_age, duration, price, trailerUrl } = props;
     return (
         <Card className = "Filmcard">
-            <Card.Img variant="top" src={url || "https://static.vecteezy.com/system/resources/previews/000/665/794/large_2x/vector-cinema-elements.jpg"} />
+            <Card.Img className="cardImg" variant="top" src={url} />
             <Card.Body>
                 <Card.Title>
                     <h2>{title}</h2>

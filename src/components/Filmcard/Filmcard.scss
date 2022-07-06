@@ -3,15 +3,23 @@
 .Filmcard {
     padding: 1em;
     margin: 1em;
-    background-color: #868acf !important;
-    border-radius: 2em;
-    border: .1em solid black;
+    color: white;
+    background: radial-gradient(rgb(0, 0, 0), rgb(89, 89, 89));
+    border-radius: 0.8em !important;
     box-shadow: 3px 3px 10px 1px;
+    font-family: Copperplate, Papyrus, fantasy;
+    box-shadow: 0em 0em 0.1em 0.2em rgba(255, 255, 255, 0.621) ;
 
+    .cardImg{
+        height: 30em;
+        border-radius: 0.8em;
+    }
     .cardBtn {
-        background-color: #0606dc;
-        border: 0;
+        background-color: #971919;
+        border: 0.2em solid rgba(0, 0, 0, 0.35);
         color: white;
+        font-weight: bold;
+        font-family: Copperplate, Papyrus, fantasy;
     }
     ul{
         list-style: none;

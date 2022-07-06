@@ -1,27 +1,39 @@
-
-
 .Filmcard {
-    padding: 1em;
-    margin: 1em;
-    color: white;
-    background: radial-gradient(rgb(0, 0, 0), rgb(89, 89, 89));
-    border-radius: 0.8em !important;
-    box-shadow: 3px 3px 10px 1px;
+    height: 48em;
+    color: black;
+    background: radial-gradient(rgb(251, 251, 251), rgb(89, 89, 89));
     font-family: Copperplate, Papyrus, fantasy;
-    box-shadow: 0em 0em 0.1em 0.2em rgba(255, 255, 255, 0.621) ;
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    .cardImg{
-        height: 30em;
-        border-radius: 0.8em;
+    .card2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
     }
+    .cardImg {
+        height: 25em;
+    }
+
+    .list{
+        text-align: center;
+        font-weight: bold;
+    }
+
     .cardBtn {
         background-color: #971919;
         border: 0.2em solid rgba(0, 0, 0, 0.35);
         color: white;
         font-weight: bold;
         font-family: Copperplate, Papyrus, fantasy;
+        border-radius: 0.4em;
+        box-shadow: 0em 0em 0.2em 0.05em rgba(255, 255, 255, 0.4);
     }
-    ul{
+
+    ul {
         list-style: none;
         text-align: left;
         padding: 20px 0 0 0;

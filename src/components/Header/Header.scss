@@ -43,15 +43,19 @@
     display: flex;
     align-items: center;
     flex: row;
-    margin-left: 1em;
+    margin-left: 2em;
   }
 
   .nav2Second {
     height: 6em;
     width: 50%;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     flex: row;
+  }
+  .userName{
+    width: 12em;
   }
 }
 .nav {

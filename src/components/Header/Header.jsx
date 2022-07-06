@@ -39,12 +39,13 @@ const Header = () => {
                 <div className='nav2First'>
                     <div className="nav" onClick={() => travel("/")}>Home</div>
                     <div className="nav" onClick={() => travel("/films")}>Films</div>
+                    <div className="nav" onClick={() => travel("/films/addfilm")}>Add Film</div>
                 </div>
                 <div className='netflixContainer'>
                     <img className='netflix' src="../../../public/img/netflixpobre.jpeg" alt="" />
                 </div>
                 <div className="nav2Second">
-                    <div className="nav" to="/">{identification?.user.name}</div>
+                    <div className="nav userName" to="/">{identification?.user.name}</div>
                     <div className="nav" onClick={() => dispatch(logOut())} >Logout</div>
                 </div>
             </div>

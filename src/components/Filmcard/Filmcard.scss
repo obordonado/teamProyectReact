@@ -1,11 +1,14 @@
-.Filmcard {
+.FilmCard {
+    height:25em;
     padding: 1em;
-    // margin: 1em;
-    background-color: #868acf !important;
-    border-radius: 2em;
-    border: .1em solid black;
-    box-shadow: 3px 3px 10px 1px;
-    img {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: white;
+    background: linear-gradient(rgb(222, 222, 222),rgb(111, 15, 15));
+    border-radius: 0.5em !important;
+    box-shadow: 0.2em 0.2em 0.4em 0.1em white;
+    .filmCardImg {
+        height: 15em;
         cursor: pointer;
     }
 
@@ -17,7 +20,6 @@
             }
         }
     }
-    
 
     .cardBtn {
         background-color: #0606dc;

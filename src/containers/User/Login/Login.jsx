@@ -20,15 +20,15 @@ const Login = () => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value })
   }
 
-  useEffect(() => {
+  /* useEffect(() => {
 
     if (identification?.token !== '') {
       setTimeout(() => {
         navigate("/");
-
+  
       }, 500)
     };
-  }, );
+  }, ); */
 
 
   const log = () => {
@@ -42,7 +42,7 @@ const Login = () => {
       };
 
     } else {
-      setMsgError('Password must be at least 5 characters long');
+      setMsgError('Password must be at least 6 characters long');
       return;
     }
 
@@ -61,7 +61,7 @@ const Login = () => {
       {/* <pre>{JSON.stringify(credentials, null, 2)}</pre> */}
       <input type='text' name='client_number' title='client_number' placeholder='Client number' onChange={updateCredentials} lenght='30' />
       <input type='password' name='password' title='password' placeholder='Password' onChange={updateCredentials} lenght='30' />
-      <Button variant="primary" className="loginButton" onClick={() => log()}>Login</Button>
+      <Button variant="primary" className="loginButton" onClick={() => log()(identification.token ? navigate("/") : navigate("/users/login "))}>Login</Button>
       <div className='error'>{msgError}</div>
     </div>
   )

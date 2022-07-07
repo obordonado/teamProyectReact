@@ -48,7 +48,7 @@ export const loginUser = (body) => async (dispatch) => {
     }
 
   } catch (error) {
-    dispatch(logError(error))
+    console.log(error)
   }
 };
 

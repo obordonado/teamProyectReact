@@ -7,6 +7,7 @@ import Login from "./containers/User/Login/Login";
 import Register from "./containers/User/Register/Register";
 import Film from "./containers/Film/Film";
 import NewFilm from './containers/NewFilm/NewFilm';
+import Profile from './containers/Profile/Profile';
 
 function App() {
 

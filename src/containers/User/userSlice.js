@@ -21,7 +21,8 @@ export const userSlice = createSlice({
     },
     logout: (state, action) => {
       return {
-        ...state.initialState
+        ...state.initialState,
+        token : ""
       }
 
     },
@@ -55,6 +56,7 @@ export const loginUser = (body) => async (dispatch) => {
 
 export const logOut = () => (dispatch) => {
   dispatch(logout());
+  
 };
 
 export const registerUser = (name, client_number, age, gender, password, role) => async (dispatch) => {

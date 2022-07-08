@@ -6,18 +6,13 @@ export const filmSlice = createSlice({
         films: []
     },
     reducers: {
-        addFilmData: (state, action) => {
+        addFilmCard: (state, action) => {
             state.films = action.payload
         },
-        removeCard: (state, action) => {
-            let key = state.films.filter(film => {
-                film.id === action.payload
-            })
-        }
     }
 })
 
-export const { addFilmData, removeCard } = filmSlice.actions
+export const { addFilmData } = filmSlice.actions
 
 export const selectFilm = (state) => {
     console.log(state)

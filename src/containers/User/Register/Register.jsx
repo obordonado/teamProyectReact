@@ -2,7 +2,7 @@ import React from "react"
 import { useEffect, useState } from "react"
 import { Form, Button, Row, Col } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
-import { registerUser, userData} from '../userSlice'
+import { registerUser, userData } from '../userSlice'
 import { useNavigate } from 'react-router-dom'
 
 import "./Register.scss"
@@ -38,15 +38,14 @@ const Register = props => {
   const userRegister = (event) => {
     event.preventDefault()
 
- /*    if (! /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(register.email)) {
+    if (! /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(register.email)) {
       setRegister({
         ...register,
         isError: true,
         message: 'Wrong e-mail'
       });
       return;
-    } */
-
+    }
     if (register.password.length > 5) {
       if (! /[\d()+-]/g.test(register.password)) {
         setRegister({
@@ -56,12 +55,11 @@ const Register = props => {
         });
         return;
       };
-
     } else {
       setRegister({
         ...register,
         isError: true,
-        message: 'El password debe de tener como mínimo 4 caracteres'
+        message: 'Password must be at least 6 characters long'
       });
       return;
     }
@@ -73,13 +71,11 @@ const Register = props => {
     });
 
     dispatch(registerUser(register.name, register.client_number, register.age, register.gender, register.password, register.role))
-
   }
 
   return (
     <Row className="Register justify-content-md-center">
       <Col md={6}>
-        
         <br></br>
         <Form onSubmit={userRegister}>
           <Form.Group className="mb-3" controlId="formBasicEmail">

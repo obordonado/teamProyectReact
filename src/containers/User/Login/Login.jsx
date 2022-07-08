@@ -20,15 +20,15 @@ const Login = () => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value })
   }
 
-   useEffect(() => {
+  useEffect(() => {
 
     if (identification?.token !== '') {
       setTimeout(() => {
         navigate("/");
-  
+
       }, 200)
     };
-  }, );
+  });
 
   const log = () => {
 
@@ -52,7 +52,6 @@ const Login = () => {
       password: credentials.password
     }
     ));
-
   };
 
   return (

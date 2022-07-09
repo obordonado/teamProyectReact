@@ -6,7 +6,7 @@ import Home from "./containers/Home/Home";
 import Login from "./containers/User/Login/Login";
 import Register from "./containers/User/Register/Register";
 import Film from "./containers/Film/Film";
-import NewFilm from './containers/NewFilm/NewFilm';
+import Rent from './containers/Rent/Rent';
 import Profile from './containers/Profile/Profile';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/films/addfilm" element={<NewFilm />} />
+          <Route path="/rent/rent" element={<Rent />} />
           <Route path="/users/login" element={<Login />} />
           <Route path="/users/adduser" element={<Register />} />
           <Route path="/films" element={<Film />} />

@@ -1,19 +1,21 @@
 import { useEffect } from "react"
-import axios from 'axios'
 import { useDispatch, useSelector } from "react-redux"
 import { Container, Row, Col } from 'react-bootstrap'
 import { selectFilm, addFilmCard } from "./filmSlice"
 import Filmcard from '../../components/Filmcard/Filmcard'
+import axios from 'axios'
+
 import './Film.scss'
 
 const Film = props => {
+
     const dispatch = useDispatch()
+
     const films = useSelector(selectFilm)
 
     useEffect(() => {
         axios.get('https://heroku-sqlurl.herokuapp.com/films')
             .then(resp => {
-                console.log(resp.data)
                 dispatch(addFilmCard(resp.data))
             })
     }, [])

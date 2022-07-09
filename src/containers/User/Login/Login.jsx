@@ -56,12 +56,18 @@ const Login = () => {
 
   return (
     <div className='loginDesign'>
+
       {/* <pre>{JSON.stringify(credentials, null, 2)}</pre> */}
       <input type='text' name='client_number' title='client_number' placeholder='Client number' onChange={updateCredentials} lenght='30' />
+
       <input type='password' name='password' title='password' placeholder='Password' onChange={updateCredentials} lenght='30' />
+
       <Button variant="primary" className="loginButton" onClick={() => log()}>Login</Button>
+
       <div className='error'>{msgError}</div>
+      
     </div>
   )
 }
+
 export default Login;

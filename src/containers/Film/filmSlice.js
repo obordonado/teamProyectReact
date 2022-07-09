@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
  
 export const filmSlice = createSlice({
+
     name: 'film',
     initialState: {
         films: []
@@ -15,7 +16,7 @@ export const filmSlice = createSlice({
 export const { addFilmCard } = filmSlice.actions
 
 export const selectFilm = (state) => {
-    console.log(state)
+
     return state.film.films
 }
 

@@ -1,9 +1,7 @@
 .Register{
     height: 90vh;
     width: 100vw;
-    background-color: rgb(232, 131, 94);
-    background-image: url(/public/sala.jpg);
-    background-size: cover;
+    background: radial-gradient(rgb(79, 78, 78), rgb(0, 0, 0));
     display: flex;
     justify-content: center;
     align-items: center;

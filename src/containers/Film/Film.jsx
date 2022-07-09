@@ -2,7 +2,7 @@ import { useEffect } from "react"
 import axios from 'axios'
 import { useDispatch, useSelector } from "react-redux"
 import { Container, Row, Col } from 'react-bootstrap'
-import { selectFilm, addFilmData } from "./filmSlice"
+import { selectFilm, addFilmCard } from "./filmSlice"
 import Filmcard from '../../components/Filmcard/Filmcard'
 import './Film.scss'
 
@@ -14,7 +14,7 @@ const Film = props => {
         axios.get('https://heroku-sqlurl.herokuapp.com/films')
             .then(resp => {
                 console.log(resp.data)
-                dispatch(addFilmData(resp.data))
+                dispatch(addFilmCard(resp.data))
             })
     }, [])
 

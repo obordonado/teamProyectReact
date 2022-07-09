@@ -12,7 +12,7 @@ export const filmSlice = createSlice({
     }
 })
 
-export const { addFilmData } = filmSlice.actions
+export const { addFilmCard } = filmSlice.actions
 
 export const selectFilm = (state) => {
     console.log(state)

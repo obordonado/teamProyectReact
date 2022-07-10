@@ -48,6 +48,7 @@ const Filmcard = props => {
             <li><strong>Recommended age:</strong> {recomended_age}</li>
             <li><strong>Duration:</strong> {duration} minutes</li>
             <li><strong>Price:</strong> {price} EUR </li>
+
           </ul>
           <Button variant="primary" className="cardBtn" size="lg" href={trailerUrl} target="_blank">Watch Trailer</Button>
         </Modal.Body>

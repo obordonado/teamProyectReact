@@ -9,7 +9,7 @@
 <center><img src="/public/img/Nodejs.png" style="width:150px;"/>      <img src="/public/img/nodeExpress.png" style="width:150px;"/>      <img src="/public/img/nodemon.png" style="width:80px;"/>      <img src="/public/img/sql.jpg" style="width:100px;"/>      <img src="/public/img/sequelize-icon.svg" style="width:80px;"/></center>
 
 
-<center><img src="/public/img/bootstrap.png" style="width:150px;"/>      <img src="/public/img/cors.png" style="width:150px;"/>      <img src="/public/img/heroku.png" style="width:80px;"/>      <img src="/public/img/react.png" style="width:80px;"/>      <img src="/public/img/sass.png" style="width:80px;"/>      <img src="/public/img/redux.png" style="width:80px;"/>
+<center><img src="/public/img/bootstrap.png" style="width:110px;"/>      <img src="/public/img/cors.png" style="width:150px;"/>      <img src="/public/img/heroku.png" style="width:80px;"/>      <img src="/public/img/react.png" style="width:80px;"/>      <img src="/public/img/sass.png" style="width:80px;"/>      <img src="/public/img/redux.png" style="width:80px;"/>
 </center>
 </pre>
 
@@ -27,9 +27,13 @@ https://github.com/Claudia1010
 https://github.com/obordonado
 
 
-> The backend of a previous project (https://github.com/obordonado/Blueclub) was taken as example and modified to suit the requirements, adjusting its code and the previous DDBB by using MySql-WorkBench.
+> <b>The backend</b> of a previous project (https://github.com/obordonado/Blueclub) was taken as example and modified to suit the requirements, adjusting its code, and the previous DDBB.
+
+>We've used MySql-WorkBench to connect to the DDBB in order to see in real time any modifications made.
 
 > The DDBB has been deployed at https://heroku-sqlurl.herokuapp.com/ to imitate a 24h online store.
+
+> The Front-End (https://github.com/Alexdck/teamProyectReact) 
 
 > To make this project, we've worked remotely (from home) to better understand its difficulties and overcome them as a proffessional team working 100% in full remote.
 

@@ -27,7 +27,7 @@ const Header = () => {
               width="50"
               height="50"
               className="d-inline-block align-top logo"
-              alt="React Bootstrap logo"
+              alt="Netflix Pobre"
             />
           </div>
                 <div className="nav1First">
@@ -50,7 +50,10 @@ const Header = () => {
                     <div className="nav" onClick={() => travel("/films/addfilm")}>Add Film</div>
                 </div>
                 <div className='netflixContainer'>
-                    <img className='netflix' src="../../../public/img/netflixpobre.jpeg" alt="" />
+                    <img className='netflix' src="../../../public/img/netflixpobre.jpeg"
+                        width="50"
+                        height="50"
+                        alt="Netflix Pobre" />
                 </div>
                 <div className="nav2Second">
                     <div className="nav userName" to="/">{identification?.user.name}</div>

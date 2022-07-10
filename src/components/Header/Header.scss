@@ -7,6 +7,9 @@
   justify-content: center;
   flex-direction: row;
   cursor: pointer;
+  .logo{
+    min-width: 5em;
+  }
 
   .nav1First {
     height: 6em;

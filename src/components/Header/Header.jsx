@@ -26,7 +26,7 @@ const Header = () => {
               src="/logo.sv../../../public/img/netflixpobre.jpeg"
               width="50"
               height="50"
-              className="d-inline-block align-top"
+              className="d-inline-block align-top logo"
               alt="React Bootstrap logo"
             />
           </div>

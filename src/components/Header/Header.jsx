@@ -10,7 +10,6 @@ const Header = () => {
     const identification = useSelector(userData)
 
     let navigate = useNavigate()
-
     const dispatch = useDispatch()
 
     const travel = (destiny) => {
@@ -20,7 +19,7 @@ const Header = () => {
     if (!identification?.token) {
 
         return (
-
+            
             <div className='nav1'>
                 <div className='netflixContainer'>
             <img
@@ -35,7 +34,7 @@ const Header = () => {
                     <div className="nav" onClick={() => travel("/")}>Home</div>
                     <div className="nav" onClick={() => travel("/films")}>Films</div>
                 </div>
-                
+            
                 <div className="nav1Second">
                     <div className="nav" onClick={() => travel("/users/login")}>Login</div>
                     <div className="nav" onClick={() => travel("/users/adduser")}>Register</div>
@@ -43,13 +42,12 @@ const Header = () => {
             </div>
         )
     } else {
-
         return (
             <div className='nav2'>
                 <div className='nav2First'>
                     <div className="nav" onClick={() => travel("/")}>Home</div>
                     <div className="nav" onClick={() => travel("/films")}>Films</div>
-                    <div className="nav" onClick={() => travel("/rent/rent")}>Rents</div>
+                    <div className="nav" onClick={() => travel("/films/addfilm")}>Add Film</div>
                 </div>
                 <div className='netflixContainer'>
                     <img className='netflix' src="../../../public/img/netflixpobre.jpeg" alt="" />

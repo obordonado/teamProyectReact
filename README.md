@@ -102,20 +102,30 @@ C.R.U.D. with:
 
 ---
 > If the log in is correct, he / she will be re-directed to the home page and, a button with his / her name will be visible in the Header.
+> A new button will alse appear so that the user can log out.
 
 <img src="./public/img/loggedIn.png">
 
 
+---
+> #### Register link.
+
+> In the "Register" page, the user will be prompted to introduce the required data in order to register correctly.
+> All data must be filled in for the user to be able to register.
+
+<img src="./public/img/register.png">
+
+----
+> Once the user has clicked the register button at the end of the form, he / she will see a message indicating that he / she registered correctly.
+
+<img src="./public/img/registered.png">
+
+---
+> In order to verify that a new user has been created and the password has been secured (hashed), we can see it by using MySql-Workbench:
+
+<img src="./public/img/registeredProve.png">
 
 
 
-
-</br>
-
-
-
-
-
-</br>
 
 

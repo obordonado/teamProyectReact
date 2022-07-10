@@ -22,21 +22,21 @@
 > As the fifth project was required by th GeeksHubs staff, we were assigned to work on this project as a team, to cover all aspects (from backend to fronted) of this online store.
 
 ### The team consisted of the following members (in alphabetical order);
->https://github.com/Alexdck (Mac)
-https://github.com/Claudia1010 (Windows)
-https://github.com/obordonado (Linux)
+>https://github.com/Alexdck (Mac)<br>
+https://github.com/Claudia1010 (Windows)<br>
+https://github.com/obordonado (Linux)<br>
 
 
-> <b>The backend</b> of a previous project (https://github.com/obordonado/Blueclub) was taken as example and modified to suit the requirements, adjusting its code, and the previous DDBB.
+> <b>The backend</b> of a previous project (https://github.com/obordonado/Blueclub) was used and modified to suit the requirements by adjusting its code, as same as the previous DDBB.
 
->We've used MySql-WorkBench to connect to the DDBB in order to see in real time any modifications made.
+>We've used MySql-WorkBench to connect to the DDBB hosted in Heroku in order to see in real time any modifications made.
 
 > The DDBB has been deployed at https://heroku-sqlurl.herokuapp.com/ to imitate a 24h online store.
 
-> The Front-End (https://github.com/Alexdck/teamProyectReact) 
+> The Front-End hosted in Github (https://github.com/Alexdck/teamProyectReact) was used for all three members to work with. 
 
 > To make this project, we've worked remotely (from home) to better understand its difficulties and overcome them as a proffessional team working 100% in full remote.
-> All the icons at the header allude to the technologies we've used in for this project.
+> All the icons at the header allude to the technologies we've used in this project.
 
 #### The requirements for this project included;
 
@@ -68,7 +68,7 @@ C.R.U.D. with:
 
 #### Home Page
 
-> In the Home page we decided to put a carousel so the user may see some of the options he can purchase as well as to make it more dynamic.
+> In the Home page we decided to put a carousel so the user may see some of the options he can purchase as well as to make it more dynamic.<br>
 > At the top we included a NavBar, for the user to click on and the user can:
 >- View all possible movies.
 >- Register.
@@ -82,7 +82,7 @@ C.R.U.D. with:
 > #### Film link.
 
 > In the "Film" page we decided to use cards (Bootstrap) with the available information of all the movies.
-> The user can click on any of them, and a pop-up window will show information relative to the movie selected.
+> The user can click on any of them, and a pop-up window will show information relative to the movie that has been selected.
 > In the new window, the user will be able to see a trailer of the selected movie.
 
 <img src="./public/img/filmsTrailer.png">
@@ -101,7 +101,7 @@ C.R.U.D. with:
 
 
 ---
-> If the log in is correct, he / she will be re-directed to the home page and, a button with his / her name will be visible in the Header.
+> If the "log in" is correct, he / she will be re-directed to the home page and, a button with his / her name will be visible in the Header.
 > A new button will alse appear so that the user can log out.
 
 <img src="./public/img/loggedIn.png">

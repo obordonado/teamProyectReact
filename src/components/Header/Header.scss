@@ -1,104 +1,45 @@
 .nav1 {
-  height: 6em;
   width: 100%;
   background: radial-gradient(rgb(0, 0, 0), rgba(58, 8, 8, 0.907), rgb(0, 0, 0));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  cursor: pointer;
-  .logo{
-    min-width: 5em;
-  }
-
-  .nav1First {
-    height: 6em;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    flex: row;
-    margin-left: 2em;
-  }
-
-  .nav1Second {
-    height: 6em;
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex: row;
-  }
-}
-
-.nav2 {
-  height: 6em;
-  width: 100%;
-  background: radial-gradient(rgb(0, 0, 0), rgba(58, 8, 8, 0.907), rgb(0, 0, 0));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
   cursor: pointer;
 
-  .nav2First {
-    height: 6em;
-    width: 50%;
+  .me-auto {
+    gap: 1em;
     display: flex;
-    align-items: center;
-    flex: row;
-    margin-left: 2em;
   }
 
-  .nav2Second {
-    height: 6em;
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex: row;
-  }
-  .userName{
-    width: 12em;
+  .scrolldown {
+    background-color: rgb(99, 22, 22);
+    box-shadow: 0em 0em 0.2em 0.05em rgb(245, 245, 245);
   }
 }
 .nav {
-  height: 2em;
-  width: 6em;  
   font-weight: bold;
-  font-size: x-large;
+  font-size: large;
   font-family: Copperplate, Papyrus, fantasy;
-  margin-right: 2em;
-  color: white;
+  color: white !important;
   transition: 0.5s;
   text-decoration: none;
   border: 0.2em solid rgba(162, 50, 37, 0.535);
   border-radius: 0.3em;
   background: radial-gradient(rgb(225, 63, 26), rgb(68, 14, 8));
   box-shadow: 0em 0em 0.2em 0.05em rgba(255, 255, 255, 0.621);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.nav:hover {
 
+.nav:hover {
   color: rgb(0, 0, 0);
   transition: 0.5s;
 }
-.nav:active{
-  transition: 0.2s;
-  border: 0.27em solid rgba(162, 50, 37, 0.535);
+
+.d-inline-block {
+  height: 3.3em;
+  width: 4em;
+  border-radius: 0.5em;
+  border: 0.2em solid black;
+  box-shadow: 0em 0em 0.3em 0.05em rgb(255, 255, 255);
 }
 
 // .netflixContainer{
 //   display: flex;
 //   align-items: center;
 //   justify-content: center;
-
-// }
-// .netflix{
-//   height: 5em;
-//   width: 7em;
-//   border-radius: 0.5em;
-//   border: 0.2em solid black;
-//   box-shadow: 0em 0em 0.3em 0.05em white;
-// }

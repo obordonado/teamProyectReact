@@ -125,7 +125,18 @@ C.R.U.D. with:
 
 <img src="./public/img/registeredProve.png">
 
+---
+> #### Responsive.
+
+> Due to the use of Mobile first, every possible view is responsive, so that any user can use the store from any device.
+
+<img src="./public/img/responsive.png">
 
 
+
+---
+
+> The project was made with the participation of all three coders in every level so that the learning process would be greater.
+> Enjoy the code and know that any suggestion will be gladly received!
 
 

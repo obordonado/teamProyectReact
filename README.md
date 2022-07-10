@@ -22,9 +22,9 @@
 > As the fifth project was required by th GeeksHubs staff, we were assigned to work on this project as a team, to cover all aspects (from backend to fronted) of this online store.
 
 ### The team consisted of the following members (in alphabetical order);
->https://github.com/Alexdck
-https://github.com/Claudia1010
-https://github.com/obordonado
+>https://github.com/Alexdck (Mac)
+https://github.com/Claudia1010 (Windows)
+https://github.com/obordonado (Linux)
 
 
 > <b>The backend</b> of a previous project (https://github.com/obordonado/Blueclub) was taken as example and modified to suit the requirements, adjusting its code, and the previous DDBB.
@@ -36,56 +36,60 @@ https://github.com/obordonado
 > The Front-End (https://github.com/Alexdck/teamProyectReact) 
 
 > To make this project, we've worked remotely (from home) to better understand its difficulties and overcome them as a proffessional team working 100% in full remote.
+> All the icons at the header allude to the technologies we've used in for this project.
 
 #### The requirements for this project included;
 
-- React and Redux as the base.
-- Connections to endpoints by Axios.
-- It must be a Single Page Application.
+>- React and Redux as the base.
+>- Connections to endpoints to be made through Axios.
+>- Must be a Single Page Application.
+>- Must be responsive.
+>- Passwords must be secured (We hashed them with Bcrypt)
+
+
 <br>
-- C.R.U.D.
+<pre>
+C.R.U.D.
     - Main view of the online store.
-    - View of the available movies to buy, description and movie trailer.
+    - View of the available movies to buy.
+    - Description and movie trailer.
     - Users can :
-        - Register
-        - Log in
-        - Log out
-- The use of Hooks.
+        - Register.
+        - Log in.
+        - Log out.
+</pre>
+
+---
+## <center>Screenshots</center>
+
+---
 
 
+#### Home Page
 
-● User views (registration, login, etc.)
-
-● Views consumed by the endpoints created in the API, with which the user can interact with them.
-
-
-
-
-
-
+> In the Home page we decided to put a carousel so the user may see some of the options he can purchase as well as to make it more dynamic.
+> At the top we included a NavBar, for the user to click on and the user can:
+>- View all possible movies.
+>- Register.
+>- Log in.
 
 
 </br>
 
-## Screenshots
+<img src="./public/img/Home.png">
 
 </br>
 
-● Home page:
+---
+> #### Film link.
+
+> In the Home page we decided to put a carousel so the user may see some of the options he can purchase as well as to make it more dynamic.
+> At the top we included a NavBar, for the user to click on.
+
 
 </br>
 
-<img src="https://github.com/Alexdck/teamProyectReact/blob/devCl/public/img/screenshot1.png">
-
-</br>
-
-● Login page:
-
-</br>
-
-<img src="https://github.com/Alexdck/teamProyectReact/blob/master/public/img/screenshot2.png">
-
-</br>
+<img src="./public/img/Home.png">
 
 ● Register page:
 

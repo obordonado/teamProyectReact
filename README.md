@@ -45,14 +45,15 @@ https://github.com/obordonado (Linux)
 >- Must be a Single Page Application.
 >- Must be responsive.
 >- Passwords must be secured (We hashed them with Bcrypt)
+>- Must have an admin user.
 
 
 <br>
 <pre>
-C.R.U.D.
+C.R.U.D. with:
     - Main view of the online store.
-    - View of the available movies to buy.
-    - Description and movie trailer.
+    - View of the available movies to purchase.
+    - Description and movie trailer of the selected movie.
     - Users can :
         - Register.
         - Log in.
@@ -73,9 +74,6 @@ C.R.U.D.
 >- Register.
 >- Log in.
 
-
-</br>
-
 <img src="./public/img/Home.png">
 
 </br>
@@ -83,40 +81,38 @@ C.R.U.D.
 ---
 > #### Film link.
 
-> In the Home page we decided to put a carousel so the user may see some of the options he can purchase as well as to make it more dynamic.
-> At the top we included a NavBar, for the user to click on.
+> In the "Film" page we decided to use cards (Bootstrap) with the available information of all the movies.
+> The user can click on any of them, and a pop-up window will show information relative to the movie selected.
+> In the new window, the user will be able to see a trailer of the selected movie.
+
+<img src="./public/img/filmsTrailer.png">
+
+
+---
+> #### Log in link.
+
+> In the "Login" page, the user will be required to type his / her client number and password in order to work.
+> If the user doesn't exist or data is incorrect, an "incorrect user / password" message will be shown.
+
+
+
+<img src="./public/img/login.png">
+
+
+
+---
+> If the log in is correct, he / she will be re-directed to the home page and, a button with his / her name will be visible in the Header.
+
+<img src="./public/img/loggedIn.png">
+
+
+
+
 
 
 </br>
 
-<img src="./public/img/Home.png">
 
-● Register page:
-
-</br>
-
-<img src="https://github.com/Alexdck/teamProyectReact/blob/devCl/public/img/screenshot3.png">
-
-</br>
-
-● Films page:
-
-</br>
-
-<img src="https://github.com/Alexdck/teamProyectReact/blob/devCl/public\img\screenshot4.PNG">
-
-</br>
-
-##Technologies:
-
-</br>
-
-<code><img width="10%" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg"></code>
-<code><img width="10%" src="https://seeklogo.com/images/R/redux-logo-9CA6836C12-seeklogo.com.png"></code> <code><img width="10%" src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg"></code> <code><img width="10%" src="https://www.vectorlogo.zone/logos/sass-lang/sass-lang-ar21.svg"></code> <code><img width="10%" src="https://addons.mozilla.org/user-media/previews/full/227/227652.png?modified=1622133270"></code> <code><img width="10%" src="https://images.ctfassets.net/23aumh6u8s0i/6sw33rq7EM8nCi5Gov3RCD/6b1d1cf37d688b3e81d2445da694e938/jwt_01"></code> <code><img width="10%" src="https://www.vectorlogo.zone/logos/axios/axios-ar21.svg"></code> <code><img width="10%" src="https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg"></code>
-
-</br>
-
-##Deploy:
 
 
 

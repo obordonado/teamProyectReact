@@ -1,16 +1,19 @@
 .FilmCard {
-    height: 25em;
-    padding: 1em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    color: white;
-    background: linear-gradient(rgb(222, 222, 222), rgb(111, 15, 15));
+    height: 27em;
+    padding: 0.1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: black;
+    background: linear-gradient(rgb(222, 222, 222), white);
     border-radius: 0.5em !important;
     box-shadow: 0.2em 0.2em 0.4em 0.1em white;
-
+    font-family: Copperplate, Papyrus, fantasy;
+    
+    
     .filmCardImg {
-        height: 15em;
+        height: 18em;
         cursor: pointer;
+        border-radius: 0.5em 0.5em 0em 0em;
     }
 
     .card-body {
@@ -22,16 +25,10 @@
             }
         }
     }
-
-    .cardBtn {
-        background-color: #0606dc;
-        border: 0;
-        color: white;
-    }
 }
 
 .modalPrincipalBody {
-    width: 15em;
+    font-family: Copperplate, Papyrus, fantasy;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,13 +47,20 @@
             text-align: center;
             padding: 20px 0 0 0;
         }
+
         .cardImgClick {
             height: 25em;
             width: 18em;
         }
     }
+    .cardBtn {
+        height: 2.5em;
+        width: 12em;
+        background: radial-gradient(rgb(225, 63, 26), rgb(68, 14, 8));
+        box-shadow: 0em 0em 0.2em 0.05em rgba(0, 0, 0, 0.621);
+        color: white;
+        border: 0.1em solid rgb(1, 0, 0);
+        font-weight: bold;
+        font-family: Copperplate, Papyrus, fantasy;
+    }
 }
-
-
-
-

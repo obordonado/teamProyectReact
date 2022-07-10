@@ -103,15 +103,10 @@ const Register = props => {
             <Form.Control className="label" type="password" name="password" placeholder="Password" onChange={handleInput} />
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label></Form.Label>
-            <Form.Control className="label" type="text" name="role" placeholder="Role" onChange={handleInput} />
-          </Form.Group>
-
           <Button variant="primary" type="submit">
             Register
           </Button>
-          
+
         </Form>
         <p>{register.isError ? register.message : ''}</p>
         <p>{identification.isError ? identification.errorMessage : identification.successMessage}</p>

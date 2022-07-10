@@ -25,7 +25,7 @@ const Filmcard = props => {
             <Card.Img
               className="filmCardImg"
               variant="top"
-              src={url || "https://static.vecteezy.com/system/resources/previews/000/665/794/large_2x/vector-cinema-elements.jpg"}
+              src={url}
               onClick={handleShow}
             />
             <Card.Body>
@@ -35,13 +35,12 @@ const Filmcard = props => {
             </Card.Body>
         </Card>
   
-        <Modal show={show} onHide={handleClose}>
+        <Modal className="modalPrincipalBody" show={show} onHide={handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>{title}</Modal.Title>
+            <Modal.Title className="modalHeader">{title}</Modal.Title>
           </Modal.Header>
           <Modal.Body className="modalBody">
-            <img className="cardImgClick" src={url || "https://static.vecteezy.com/system/resources/previews/000/665/794/large_2x/vector-cinema-elements.jpg"}/>
-            <h5>Información</h5>
+            <img className="cardImgClick" src={url}/>
             <ul>
                 <li><strong>Director:</strong> {director}</li>
                 <li><strong>Release date:</strong> {year}</li>

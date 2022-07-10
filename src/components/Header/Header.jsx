@@ -25,7 +25,7 @@ const Header = () => {
                     <div className="nav" onClick={() => travel("/")}>Home</div>
                     <div className="nav" onClick={() => travel("/films")}>Films</div>
                 </div>
-                <div lassName='netflixContainer'>
+                <div className='netflixContainer'>
                     <img className='netflix' src="../../../public/img/netflixpobre.jpeg" alt="" />
                 </div>
                 <div className="nav1Second">

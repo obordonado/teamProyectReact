@@ -1,33 +1,65 @@
+<img src="public/img/Geekshubs.png" style="width:900px;"/>
+
+---
+
+<pre>
+<center><img src="/public/img/axios.png" style="width:80px;"/>Axios  <img src="/public/img/bcrypt.jpg" style="width:180px;"/>     <img src="/public/img/jwt.png" style="width:80px;"/>    <img src="/public/img/mysql.jpg" style="width:180px;"/>   <img src="/public/img/doenv.png" style="width:90px";></center>
+
+
+<center><img src="/public/img/Nodejs.png" style="width:150px;"/>      <img src="/public/img/nodeExpress.png" style="width:150px;"/>      <img src="/public/img/nodemon.png" style="width:80px;"/>      <img src="/public/img/sql.jpg" style="width:100px;"/>      <img src="/public/img/sequelize-icon.svg" style="width:80px;"/></center>
+
+
+<center><img src="/public/img/bootstrap.png" style="width:150px;"/>      <img src="/public/img/cors.png" style="width:150px;"/>      <img src="/public/img/heroku.png" style="width:80px;"/>      <img src="/public/img/react.png" style="width:80px;"/>      <img src="/public/img/sass.png" style="width:80px;"/>      <img src="/public/img/redux.png" style="width:80px;"/>
+</center>
+</pre>
+
+---
+
+> <center> <h1> Online Store ( Frontend project ) </h1></center>
 
 </br>
 
-<img src="https://github.com/Alexdck/teamProyectReact/blob/devCl/public/img/geekhubs.png">
+> As the fifth project was required by th GeeksHubs staff, we were assigned to work on this project as a team, to cover all aspects (from backend to fronted) of this online store.
 
-</br>
+### The team consisted of the following members (in alphabetical order);
+>https://github.com/Alexdck
+https://github.com/Claudia1010
+https://github.com/obordonado
 
-### Films Frontend 
 
-</br>
+> The backend of a previous project (https://github.com/obordonado/Blueclub) was taken as example and modified to suit the requirements, adjusting its code and the previous DDBB by using MySql-WorkBench.
 
-This is the fifth Geekshubs project and it consists in create a frontend for the backend we have previously created in the last project, for this workwe work on groups and the minimum requirements for the project to be suitable are:
+> The DDBB has been deployed at https://heroku-sqlurl.herokuapp.com/ to imitate a 24h online store.
 
-● The use of Hooks, using them in your components.
+> To make this project, we've worked remotely (from home) to better understand its difficulties and overcome them as a proffessional team working 100% in full remote.
 
-● Well organized folder structure (components, containers, etc.)
+#### The requirements for this project included;
 
-● React-router-dom or any library to have different views.
+- React and Redux as the base.
+- Connections to endpoints by Axios.
+- It must be a Single Page Application.
+<br>
+- C.R.U.D.
+    - Main view of the online store.
+    - View of the available movies to buy, description and movie trailer.
+    - Users can :
+        - Register
+        - Log in
+        - Log out
+- The use of Hooks.
+
+
 
 ● User views (registration, login, etc.)
 
 ● Views consumed by the endpoints created in the API, with which the user can interact with them.
 
-● CRUD posts (The user can create, edit and delete posts).
 
-● Only a specific user can edit/delete their own posts.
 
-● User can follow other users and have followers.
 
-● Redux / RxJS application.
+
+
+
 
 </br>
 
@@ -78,14 +110,8 @@ This is the fifth Geekshubs project and it consists in create a frontend for the
 
 ##Deploy:
 
-https://heroku-sqlurl.herokuapp.com/
+
 
 </br>
 
-##Authors:
 
-https://github.com/Claudia1010
-
-https://github.com/Alexdck
-
-https://github.com/obordonado

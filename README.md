@@ -102,7 +102,7 @@ C.R.U.D. with:
 
 ---
 > If the "log in" is correct, he / she will be re-directed to the home page and, a button with his / her name will be visible in the Header.
-> A new button will alse appear so that the user can log out.
+> A new button will also appear so that the user can log out.
 
 <img src="./public/img/loggedIn.png">
 

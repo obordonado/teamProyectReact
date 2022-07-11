@@ -4,14 +4,19 @@ import { Carousel } from 'react-bootstrap';
 import "./Home.scss";
 
 function Home() {
+
   return (
+
     <div className='Home'>
+
       <div className='homeTop'></div>
       <div className='homeBot'>
+        
         <div className="botLeft"></div>
         <div className="botMid">
 
           <Carousel className='carousel' indicators={false} controls={false}>
+
             <Carousel.Item>
               <img
                 className="d-block w-100"
@@ -19,6 +24,7 @@ function Home() {
                 alt="Gladiator"
               />
             </Carousel.Item>
+
             <Carousel.Item>
               <img
                 className="d-block w-100"
@@ -26,6 +32,7 @@ function Home() {
                 alt="Interstellar"
               />
             </Carousel.Item>
+
             <Carousel.Item>
               <img
                 className="d-block w-100"

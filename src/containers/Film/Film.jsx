@@ -14,6 +14,7 @@ const Film = props => {
     const films = useSelector(selectFilm)
 
     useEffect(() => {
+        
         axios.get('https://heroku-sqlurl.herokuapp.com/films')
             .then(resp => {
                 dispatch(addFilmCard(resp.data))
@@ -21,10 +22,12 @@ const Film = props => {
     }, [])
 
     return (
+
         <Container className="Film">
             <Row>
                 {
                     films.map((data, index) => (
+
                         <Col key={index} xs={6} sm={4} md={3} xl={2}>
                             <Filmcard {...data} />
                         </Col>

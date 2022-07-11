@@ -46,7 +46,9 @@ const Register = props => {
     //   return;
     // }
     if (register.password.length > 5) {
+
       if (! /[\d()+-]/g.test(register.password)) {
+
         setRegister({
           ...register,
           isError: true,
@@ -54,7 +56,9 @@ const Register = props => {
         });
         return;
       };
+
     } else {
+
       setRegister({
         ...register,
         isError: true,
@@ -73,6 +77,7 @@ const Register = props => {
   }
 
   return (
+    
     <Row className="Register justify-content-md-center">
       <Col md={6}>
         <br></br>

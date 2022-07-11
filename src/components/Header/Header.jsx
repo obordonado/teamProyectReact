@@ -1,16 +1,18 @@
 import React from 'react';
-import "./Header.scss";
 import { useNavigate } from "react-router-dom"
 import { useDispatch, useSelector } from 'react-redux';
 import { logOut, userData } from '../../containers/User/userSlice';
-import { Navbar, Container, NavDropdown, Nav } from 'react-bootstrap';
+import { Navbar, Container, Nav } from 'react-bootstrap';
+
+import "./Header.scss";
 
 
 const Header = () => {
 
+    let navigate = useNavigate()
+    
     const identification = useSelector(userData)
 
-    let navigate = useNavigate()
     const dispatch = useDispatch()
 
     const travel = (destiny) => {
@@ -22,26 +24,34 @@ const Header = () => {
         return (
 
             <Navbar bg="light" expand="lg" className='nav1'>
+
                 <Container className='container'>
+
                     <Navbar.Toggle aria-controls="basic-navbar-nav" className='scrolldown'/>
                     <Navbar.Collapse id="basic-navbar-nav">
+
                         <Nav className="me-auto">
                             <Nav.Link className="nav" onClick={() => travel("/")}>Home</Nav.Link>
                             <Nav.Link className="nav" onClick={() => travel("/films")}>Films</Nav.Link>
                             <Nav.Link className="nav" onClick={() => travel("/users/login")}>Login</Nav.Link>
                             <Nav.Link className="nav" onClick={() => travel("/users/adduser")}>Register</Nav.Link>
                         </Nav>
+
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
         )
     } else {
+
         return (
             
             <Navbar bg="light" expand="lg" className='nav1'>
+
                 <Container className='container'>
+
                     <Navbar.Toggle aria-controls="basic-navbar-nav" className='scrolldown'/>
                     <Navbar.Collapse id="basic-navbar-nav">
+
                         <Nav className="me-auto">
                             <Nav.Link className="nav" onClick={() => travel("/")}>Home</Nav.Link>
                             <Nav.Link className="nav" onClick={() => travel("/films")}>Films</Nav.Link>

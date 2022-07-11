@@ -7,6 +7,7 @@ export const filmSlice = createSlice({
         films: []
     },
     reducers: {
+
         addFilmCard: (state, action) => {
             state.films = action.payload
         },
@@ -16,7 +17,6 @@ export const filmSlice = createSlice({
 export const { addFilmCard } = filmSlice.actions
 
 export const selectFilm = (state) => {
-
     return state.film.films
 }
 

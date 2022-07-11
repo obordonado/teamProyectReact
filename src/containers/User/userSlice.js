@@ -3,6 +3,7 @@ import axios from 'axios';
 import jwt from 'jwt-decode';
 
 export const userSlice = createSlice({
+
   name: 'user',
   initialState: {
     token: "",
@@ -11,6 +12,7 @@ export const userSlice = createSlice({
 
   },
   reducers: {
+
     login: (state, action) => {
       return {
         ...state,
@@ -59,6 +61,7 @@ export const logOut = () => (dispatch) => {
 };
 
 export const registerUser = (name, client_number, age, gender, password, role) => async (dispatch) => {
+
   try {
     const user = await axios.post('https://heroku-sqlurl.herokuapp.com/users/adduser',
       {
@@ -71,9 +74,11 @@ export const registerUser = (name, client_number, age, gender, password, role) =
       })
 
     let response = user
+
     if (response.status === 200) {
       dispatch(register(response.data))
     }
+    
   } catch (error) {
     dispatch(logError(error))
   }

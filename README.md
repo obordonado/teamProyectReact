@@ -1,5 +1,3 @@
-<img src="public/img/Geekshubs.png" style="width:900px;"/>
-
 ---
 
 <pre>
